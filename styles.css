@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background: #e9efc9;
+  padding: 1.5rem;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.container {
+  width: 500px;
+  margin: auto;
+  padding: 2rem 2rem;
+  overflow: auto;
+}
+
+.btn {
+  margin: 5px 5px;
+  display: block;
+  color: rgb(255, 255, 255);
+  width: 100%;
+  padding: 15px 15px;
+  background: rgb(55, 130, 143);
+  border: 0;
+  border-radius: 15px;
+}
+
+/*
+.btn:hover {
+  background: rgb(89, 194, 114);
+  cursor: pointer;
+}*/
+
+#form1 {
+  padding: 2rem;
+  background: #e9efc9;
+  border-radius: 10px;
+}
+
+#form1 label {
+  display: block;
+}
+
+#form1 input[type='text'] {
+  margin-top: 10px;
+  margin-bottom: 15px;
+  border: 1px solid rgb(193, 187, 187);
+  border-radius: 15px;
+  width: 100%;
+  padding: 10px; 
+}
+
+
