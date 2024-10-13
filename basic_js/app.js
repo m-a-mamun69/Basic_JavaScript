@@ -1,7 +1,11 @@
 
 
-// Data Type in JS
 
+/*
+
+// Data Type in JS
+// Finish
+// Date 10.13.2024
 let length = 16;
 let weight = 7.5;
 console.log(length);
@@ -31,6 +35,8 @@ console.log(cars);
 const date = new Date("2022-03-25");
 
 console.log(date);
+
+*/
 
 
 /*
