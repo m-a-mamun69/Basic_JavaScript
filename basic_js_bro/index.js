@@ -92,13 +92,28 @@ document.getElementById('myP3').textContent = `Enrolled: ${isStudent}`;
     2. Exponents
     3. Multipication & Division & Modulus
     4. Additions & Subtractions
-*/
+
 
 // let result = 1 + 2 * 3 + 4 ** 2
 // let result = 12 % 5 + 8 / 2
-let result = 6 / 2 ** (2 + 5)
+// let result = 6 / 2 ** (2 + 5)
 
-console.log(`Enrolled Students: ${result}`);
+// console.log(`Enrolled Students: ${result}`);
+*/
+
+
+// ------ User Input -------------- !
+
+let username;
+// username = window.prompt("What`s your username? ");
+
+document.getElementById("mySubmit").onclick = function(){
+    username = document.getElementById("myText").value;
+    document.getElementById("myH4").textContent = `Hello: ${username}`
+}
+
+// console.log(username);
+
 
 
 // For Comment Single Line 
