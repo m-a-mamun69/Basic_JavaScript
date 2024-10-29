@@ -49,13 +49,56 @@ console.log(`Enrolled: ${isStudent}`);
 */
 
 
-
+/*
+// ------ All Mixed Up -------------- Same
 let fullName = "Al-Mamun";
 let age = 25;
 let isStudent = false;
 document.getElementById('myP1').textContent = `Your name is: ${fullName}`;
 document.getElementById('myP2').textContent = `Your are a ${age} Year Old.`;
 document.getElementById('myP3').textContent = `Enrolled: ${isStudent}`;
+*/
+
+
+///*
+// ------ ARITHMETIC OPERATORS -------------- Date: 28.10.24
+// let students = 31;
+
+// students = students + 1
+// students = students - 1
+// students = students * 2
+// students = students / 2
+// students = students ** 2
+// let extrastudents = students % 3
+
+//---- Assignment Operators ----- !
+
+// students += 1
+// students -= 1
+// students *= 2
+// students /= 2
+// students **= 2
+// students %= 2
+
+//---- Increment/Decrement ----- !
+
+// students++;
+// students--;
+
+// ------ Operator Precedence -------------- !
+
+/*
+    1. Parenthesis ()
+    2. Exponents
+    3. Multipication & Division & Modulus
+    4. Additions & Subtractions
+*/
+
+// let result = 1 + 2 * 3 + 4 ** 2
+// let result = 12 % 5 + 8 / 2
+let result = 6 / 2 ** (2 + 5)
+
+console.log(`Enrolled Students: ${result}`);
 
 
 // For Comment Single Line 
