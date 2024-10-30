@@ -118,7 +118,7 @@ document.getElementById("mySubmit").onclick = function(){
 
 
 // ------ TYPE CONVERSION -------------- Date: 30.10.24
-
+/*
 // let age = window.prompt("How Old are You?");
 // age = Number(age);
 // age += 1;
@@ -138,7 +138,28 @@ let z;
 console.log(x, typeof x);
 console.log(y, typeof y);
 console.log(z, typeof z);
+*/
 
+
+// ------ JS Constants -------------- !
+
+const PI = 3.1416;
+let radius;
+let circumference;
+
+// radius = window.prompt('Enter the radius of a circle');
+// radius = Number(radius);
+
+// circumference = 2 * pi * radius;
+
+document.getElementById("mySubmit").onclick = function(){
+    radius = document.getElementById("myText").value;
+    radius = Number(radius);
+    circumference = 2 * PI * radius;
+    document.getElementById("myH2").textContent = circumference + "cm";
+}
+
+// console.log(circumference);
 
 
 // For Comment Single Line 
