@@ -15,3 +15,6 @@ pdf_file.drawString(72, 640, "mCode.com ")
 
 # Save the PDF file
 pdf_file.save()
+
+# number = 5
+# print("Even" if number % 2 == 0 else "Odd")

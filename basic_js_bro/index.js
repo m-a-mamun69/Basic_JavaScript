@@ -60,8 +60,8 @@ document.getElementById('myP3').textContent = `Enrolled: ${isStudent}`;
 */
 
 
-///*
-// ------ ARITHMETIC OPERATORS -------------- Date: 28.10.24
+/*
+// ------ ARITHMETIC OPERATORS -------------- Date: 29.10.24
 // let students = 31;
 
 // students = students + 1
@@ -87,7 +87,7 @@ document.getElementById('myP3').textContent = `Enrolled: ${isStudent}`;
 
 // ------ Operator Precedence -------------- !
 
-/*
+
     1. Parenthesis ()
     2. Exponents
     3. Multipication & Division & Modulus
@@ -104,6 +104,7 @@ document.getElementById('myP3').textContent = `Enrolled: ${isStudent}`;
 
 // ------ User Input -------------- !
 
+/*
 let username;
 // username = window.prompt("What`s your username? ");
 
@@ -113,6 +114,30 @@ document.getElementById("mySubmit").onclick = function(){
 }
 
 // console.log(username);
+*/
+
+
+// ------ TYPE CONVERSION -------------- Date: 30.10.24
+
+// let age = window.prompt("How Old are You?");
+// age = Number(age);
+// age += 1;
+
+// let x = "23";
+// let y = "Pizza";
+// let z = "Pizza";
+
+let x;
+let y;
+let z;
+
+ x = Number(x);
+ y = String(y);
+ z = Boolean(z);
+
+console.log(x, typeof x);
+console.log(y, typeof y);
+console.log(z, typeof z);
 
 
 
