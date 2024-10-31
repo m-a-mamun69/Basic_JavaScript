@@ -142,7 +142,7 @@ console.log(z, typeof z);
 
 
 // ------ JS Constants -------------- !
-
+/*
 const PI = 3.1416;
 let radius;
 let circumference;
@@ -158,8 +158,32 @@ document.getElementById("mySubmit").onclick = function(){
     circumference = 2 * PI * radius;
     document.getElementById("myH2").textContent = circumference + "cm";
 }
-
 // console.log(circumference);
+*/
+
+
+// ------ JS Counter -------------- Date: 31.10.24
+
+const decreaseBtn = document.getElementById('decreaseBtn');
+const increaseBtn = document.getElementById('increaseBtn');
+const resetBtn = document.getElementById('resetBtn');
+const countLabel = document.getElementById('countLabel');
+let count = 0;
+
+increaseBtn.onclick = function(){
+    count++;
+    countLabel.textContent = count;
+}
+
+decreaseBtn.onclick = function(){
+    count--;
+    countLabel.textContent = count;
+}
+
+resetBtn.onclick = function(){
+    count = 0;
+    countLabel.textContent = count;
+}
 
 
 // For Comment Single Line 
