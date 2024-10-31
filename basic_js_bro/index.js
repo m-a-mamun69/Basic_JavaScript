@@ -164,6 +164,7 @@ document.getElementById("mySubmit").onclick = function(){
 
 // ------ JS Counter -------------- Date: 31.10.24
 
+/*
 const decreaseBtn = document.getElementById('decreaseBtn');
 const increaseBtn = document.getElementById('increaseBtn');
 const resetBtn = document.getElementById('resetBtn');
@@ -184,6 +185,31 @@ resetBtn.onclick = function(){
     count = 0;
     countLabel.textContent = count;
 }
+*/
+
+
+// ------ Math Object -------------- !
+
+let x =9;
+let y = 3;
+let z = 5;
+
+// z = Math.round(x);
+// z = Math.floor(x);
+// z = Math.ceil(x);
+// z = Math.trunc(x);
+// z = Math.pow(x,y);
+// z = Math.sqrt(x);
+// z = Math.sin(x);
+// z = Math.cos(x);
+// z = Math.tan(x);
+// z = Math.abs(x);
+// z = Math.sign(x);
+
+let max = Math.max(x, y, z);
+let min = Math.min(x, y, z);
+
+console.log(min);
 
 
 // For Comment Single Line 
