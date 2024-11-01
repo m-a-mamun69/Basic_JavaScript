@@ -189,6 +189,7 @@ resetBtn.onclick = function(){
 
 
 // ------ Math Object -------------- !
+
 /*
 // let x =9;
 // let y = 3;
@@ -215,6 +216,7 @@ resetBtn.onclick = function(){
 
 // ------ Random Number Generator -------------- Date: 1.11.24
 
+/*
 // const min = 50;
 // const max = 100;
 
@@ -240,6 +242,9 @@ myButton.onclick = function(){
     myLabel2.textContent = randonNum2;
     myLabel3.textContent = randonNum3;
 }
+*/
+
+
 
 // For Comment Single Line 
 
