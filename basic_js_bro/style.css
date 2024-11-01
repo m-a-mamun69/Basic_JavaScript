@@ -3,6 +3,16 @@ body{
     font-size: 20px;
 }
 
+#myButton{
+    font-size: 3em;
+    padding: 5px 25px;
+    border-radius: 5px;
+}
+
+.myLabels{
+    font-size: 3em;
+}
+
 /* #countLabel{
     display: block;
     text-align: center;

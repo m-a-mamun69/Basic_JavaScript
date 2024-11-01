@@ -189,10 +189,10 @@ resetBtn.onclick = function(){
 
 
 // ------ Math Object -------------- !
-
-let x =9;
-let y = 3;
-let z = 5;
+/*
+// let x =9;
+// let y = 3;
+// let z = 5;
 
 // z = Math.round(x);
 // z = Math.floor(x);
@@ -206,11 +206,40 @@ let z = 5;
 // z = Math.abs(x);
 // z = Math.sign(x);
 
-let max = Math.max(x, y, z);
-let min = Math.min(x, y, z);
+// let max = Math.max(x, y, z);
+// let min = Math.min(x, y, z);
 
-console.log(min);
+// console.log(min);
+*/
 
+
+// ------ Random Number Generator -------------- Date: 1.11.24
+
+// const min = 50;
+// const max = 100;
+
+// let rendomNum = Math.floor(Math.random() * (max - min)) + min;
+
+// console.log(rendomNum);
+
+const myButton = document.getElementById("myButton");
+const myLabel = document.getElementById("myLabel");
+const myLabel2 = document.getElementById("myLabel2");
+const myLabel3 = document.getElementById("myLabel3");
+const min = 1;
+const max = 6;
+let randonNum;
+let randonNum2;
+let randonNum3;
+
+myButton.onclick = function(){
+    randonNum = Math.floor(Math.random() * max) + min;
+    randonNum2 = Math.floor(Math.random() * max) + min;
+    randonNum3 = Math.floor(Math.random() * max) + min;
+    myLabel.textContent = randonNum;
+    myLabel2.textContent = randonNum2;
+    myLabel3.textContent = randonNum3;
+}
 
 // For Comment Single Line 
 
