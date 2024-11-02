@@ -84,7 +84,9 @@ mySubmit.onclick = function(){
 */
 
 
+// --------------- Checked Property -------------- Date: 2.11.24
 
+/*
 const myCheckBox = document.getElementById("myCheckBox");
 const visaBtn = document.getElementById("visaBtn");
 const masterCardBtn = document.getElementById("masterCardBtn");
@@ -114,3 +116,23 @@ mySubmit.onclick = function(){
         paymentResult.textContent = `You must Select a Payment type.`;
     }
 }
+*/
+
+
+// --------------- TERNARY OPERATOR ---------------- !
+
+// let age = 19;
+// let message = age >= 18 ? 'You are an Adult.' : 'You are a Minor.';
+// console.log(message);
+
+// let time = 9;
+// let greeting = time < 12 ? 'Good Morning' : 'Good Afternoon.';
+// console.log(greeting);
+
+// let isStudent = true;
+// let message = isStudent ? 'You are a Student' : 'You are NOT a Student';
+// console.log(message);
+
+let purchaseAmount = 179;
+let discount = purchaseAmount >= 100 ? 10 : 0;
+console.log(`Your total is $${purchaseAmount - purchaseAmount * (discount/100)}`);
