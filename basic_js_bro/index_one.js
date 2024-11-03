@@ -121,18 +121,45 @@ mySubmit.onclick = function(){
 
 // --------------- TERNARY OPERATOR ---------------- !
 
-// let age = 19;
-// let message = age >= 18 ? 'You are an Adult.' : 'You are a Minor.';
-// console.log(message);
+/*
+let age = 19;
+let message = age >= 18 ? 'You are an Adult.' : 'You are a Minor.';
+console.log(message);
 
-// let time = 9;
-// let greeting = time < 12 ? 'Good Morning' : 'Good Afternoon.';
-// console.log(greeting);
+let time = 9;
+let greeting = time < 12 ? 'Good Morning' : 'Good Afternoon.';
+console.log(greeting);
 
-// let isStudent = true;
-// let message = isStudent ? 'You are a Student' : 'You are NOT a Student';
-// console.log(message);
+let isStudent = true;
+let message = isStudent ? 'You are a Student' : 'You are NOT a Student';
+console.log(message);
 
 let purchaseAmount = 179;
 let discount = purchaseAmount >= 100 ? 10 : 0;
 console.log(`Your total is $${purchaseAmount - purchaseAmount * (discount/100)}`);
+*/
+
+
+// --------------- JS SWITCHES  -------------- Date: 3.11.24
+
+let tesScore = 86;
+let letterGrade;
+
+switch(true){
+    case tesScore >= 90:
+        letterGrade = "A"
+        break;
+    case tesScore >= 80:
+        letterGrade = "B"
+        break;
+    case tesScore >= 70:
+        letterGrade = "C"
+        break;
+    case tesScore >= 50:
+        letterGrade = "D"
+        break;
+    default:
+        letterGrade = "F"
+}
+
+console.log(`The Letter Grade is: ${letterGrade}`);
