@@ -142,6 +142,7 @@ console.log(`Your total is $${purchaseAmount - purchaseAmount * (discount/100)}`
 
 // --------------- JS SWITCHES  -------------- Date: 3.11.24
 
+/*
 let tesScore = 86;
 let letterGrade;
 
@@ -163,3 +164,32 @@ switch(true){
 }
 
 console.log(`The Letter Grade is: ${letterGrade}`);
+*/
+
+
+// --------------- TERNARY OPERATOR ---------------- !
+
+
+let userName = "Nasurulla";
+let output;
+// let result = userName.startsWith(" ")
+// let result = userName.endsWith(" ")
+let result = userName.includes(" ")
+
+// output = userName.charAt(1);
+// output = userName.indexOf('u');
+// output = userName.lastIndexOf('u');
+// output = userName.length;
+// output = userName.trim();
+// output = userName.toUpperCase();
+// output = userName.toLowerCase();
+// output = userName.repeat(2);
+
+if(result){
+    console.log("Your username can't include ' ' ");
+}
+else{
+    console.log(userName);
+}
+
+// console.log(output);
