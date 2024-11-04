@@ -196,9 +196,9 @@ else{
 */
 
 
-// --------------- JS SWITCHES  -------------- Date: 4.11.24
+// --------------- STRING SLICING  -------------- Date: 4.11.24
 
-
+/*
 // const fullName = 'mCode mamun';
 const email = 'Mamun@gmail.com';
 
@@ -215,3 +215,24 @@ let extension = email.slice(email.indexOf("@") + 1);
 
 console.log(userName);
 console.log(extension);
+*/
+
+
+// --------------- JS METHOD CHAINING ---------------- !
+
+
+// ------------- NO Method Chaining ------------!
+let userName = window.prompt("Enter Your UserName: ");
+
+// userName = userName.trim();
+// let letter = userName.charAt(0);
+// letter = letter.toUpperCase();
+
+// let extraChars = userName.slice(1);
+// extraChars = extraChars.toLowerCase();
+// userName = letter + extraChars;
+
+// --------------- Method Chaining --------------!
+userName = userName.trim().charAt(0).toUpperCase() + userName.trim().slice(1).toLowerCase()
+
+console.log(userName)
