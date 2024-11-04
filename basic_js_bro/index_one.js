@@ -169,7 +169,7 @@ console.log(`The Letter Grade is: ${letterGrade}`);
 
 // --------------- TERNARY OPERATOR ---------------- !
 
-
+/*
 let userName = "Nasurulla";
 let output;
 // let result = userName.startsWith(" ")
@@ -193,3 +193,25 @@ else{
 }
 
 // console.log(output);
+*/
+
+
+// --------------- JS SWITCHES  -------------- Date: 4.11.24
+
+
+// const fullName = 'mCode mamun';
+const email = 'Mamun@gmail.com';
+
+// let firstName = fullName.slice(0, 2);
+// let lastName = fullName.slice(4, 9);
+
+// let firstChar = fullName.slice(0, 1);
+// let lastChar = fullName.slice(-1);
+// let firstName = fullName.slice(0, fullName.indexOf(" "));
+// let lastName = fullName.slice(fullName.indexOf(" ") + 1);
+
+let userName = email.slice(0, email.indexOf("@"));
+let extension = email.slice(email.indexOf("@") + 1);
+
+console.log(userName);
+console.log(extension);
