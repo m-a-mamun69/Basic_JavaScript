@@ -222,8 +222,9 @@ console.log(extension);
 
 
 // ------------- NO Method Chaining ------------!
-let userName = window.prompt("Enter Your UserName: ");
 
+/*
+let userName = window.prompt("Enter Your UserName: ");
 // userName = userName.trim();
 // let letter = userName.charAt(0);
 // letter = letter.toUpperCase();
@@ -235,4 +236,34 @@ let userName = window.prompt("Enter Your UserName: ");
 // --------------- Method Chaining --------------!
 userName = userName.trim().charAt(0).toUpperCase() + userName.trim().slice(1).toLowerCase()
 
-console.log(userName)
+console.log(userName);
+*/
+
+
+// --------------- LOGICAL OPERATORS  -------------- Date: 5.11.24
+
+
+const temp = -25;
+
+// if(temp > 0 && temp <= 35){
+//     console.log("The weather is GOOD.");
+// }
+// else{
+//     console.log("The weather is BAD.");
+// }
+
+if(temp <= 0 || temp > 35){
+    console.log("The weather is BAD.");
+}
+else{
+    console.log("The weather is GOOD.");
+}
+
+const isSunny = true;
+
+if( !isSunny ){
+    console.log("It is Cloudy.")
+}
+else{
+    console.log("It is Sunny.")
+}
