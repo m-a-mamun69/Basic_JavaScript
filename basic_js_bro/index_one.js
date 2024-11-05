@@ -242,7 +242,7 @@ console.log(userName);
 
 // --------------- LOGICAL OPERATORS  -------------- Date: 5.11.24
 
-
+/*
 const temp = -25;
 
 // if(temp > 0 && temp <= 35){
@@ -266,4 +266,25 @@ if( !isSunny ){
 }
 else{
     console.log("It is Sunny.")
+}
+*/
+
+
+// -------------  STRICT EQUALITY ------------!
+
+
+const PI = 3.14;
+
+// if(PI === 3.14){
+//     console.log("Thst is PI.");
+// }
+// else{
+//     console.log("Thst is NOT PI.");
+// }
+
+if(PI !== '3.14'){
+    console.log("Thst is NOT PI.");
+}
+else{
+    console.log("Thst is PI.");
 }
