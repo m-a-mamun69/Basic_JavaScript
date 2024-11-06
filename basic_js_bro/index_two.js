@@ -1,6 +1,6 @@
 
-// --------------- LOGICAL OPERATORS  -------------- Date: 5.11.24
-
+// --------------- While Loop  -------------- Date: 6.11.24
+/*
 // let username = "";
 
 // while(username === "" || username === null){
@@ -25,3 +25,40 @@ while(!loggedIn){
         console.log("Invalid credentials! Please try again");
     }
 }
+*/
+
+
+// ------------------- For Loop ------------------ !
+
+
+let i;
+
+// Increment
+// for(i=0; i <= 10; i++){
+//     console.log(i);
+// }
+
+// Decrement
+// for(i=10; i > 0; i--){
+//     console.log(i);
+// }
+
+// Continue
+// for(i=0; i <= 10; i++){
+//     if(i==7){
+//         continue;
+//     }
+//     else{
+//         console.log(i);
+//     }
+// }
+
+for(i=0; i <= 10; i++){
+    if(i==7){
+        break;
+    }
+    else{
+        console.log(i);
+    }
+}
+console.log("Happy New Year.");
