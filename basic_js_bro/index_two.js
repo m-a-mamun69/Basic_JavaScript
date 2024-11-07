@@ -67,7 +67,7 @@ console.log("Happy New Year.");
 
 // --------------- Number Guessing Game  -------------- Date: 7.11.24
 
-
+/*
 const minNum = 1;
 const maxNum = 100;
 const answer = Math.floor(Math.random() * (maxNum - minNum + 1)) + minNum;
@@ -100,4 +100,58 @@ while(running){
         }
     }
 }
+*/
 
+
+// ------------------- For Loop ------------------ !
+
+
+// function happyBirthday(userName, age){
+//     console.log("Happy Birthday to You.!");
+//     console.log("Happy Birthday to You.!");
+//     console.log(`Happy Birthday dear '${userName}'.`);
+//     console.log("Happy Birthday to You.");
+//     console.log(`You are '${age}' years Old.`);
+// }
+
+// // happyBirthday();
+// happyBirthday("rCode", 25);
+
+
+function add(x, y){
+    // let result = x + y;
+    return x + y;
+}
+function subtract(x, y){
+    return x - y;
+}
+function multiply(x, y){
+    return x * y;
+}
+function divide(x, y){
+    return x / y;
+}
+
+// let answer = add(2, 3);
+console.log(`The Sum is: ${add(2, 3)}`);
+console.log(`The subtract is: ${subtract(5, 3)}`);
+console.log(`The multiply is: ${multiply(2, 3)}`);
+console.log(`The divide is: ${divide(6, 3)}`);
+
+
+function isEven(number){
+    return number % 2 === 0 ? true : false;
+}
+console.log(`Is it Even Number: ${isEven(4)}`);
+
+
+function isValidEmail(email){
+    if(email.includes("@")){
+        return true;
+    }
+    else{
+        return false;
+    }
+}
+console.log(`Is it Valid Email: ${isValidEmail("mamun@gmail.com")}`);
+console.log(`Is it Valid Email: ${isValidEmail("mamun.com")}`);
