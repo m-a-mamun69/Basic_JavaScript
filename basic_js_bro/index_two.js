@@ -117,7 +117,7 @@ while(running){
 // // happyBirthday();
 // happyBirthday("rCode", 25);
 
-
+/*
 function add(x, y){
     // let result = x + y;
     return x + y;
@@ -155,3 +155,38 @@ function isValidEmail(email){
 }
 console.log(`Is it Valid Email: ${isValidEmail("mamun@gmail.com")}`);
 console.log(`Is it Valid Email: ${isValidEmail("mamun.com")}`);
+*/
+
+
+
+// --------------- Variable Scope  -------------- Date: 8.11.24
+
+
+// Global Vriable.
+let z = "Mamun";
+
+// functionOne()
+// functionTwo()
+// function functionOne(){
+//     // Local Vriable.
+//     let x = 5;
+//     console.log(`This is Function One Local Variabe "${x}" & Global Variable "${z}"`);
+// }
+
+// function functionTwo(){
+//     let y = 8;
+//     console.log(`This is Function One Local Variabe "${y}" & Global Variable "${z}"`);
+// }
+
+functionOne()
+functionTwo()
+function functionOne(){
+    // Local Vriable. ( Local Variable Count First.)
+    let z = 'Rashid';
+    console.log(`This is Function One Local Variabe "${z}" & Global Variable "${z}"`);
+}
+
+function functionTwo(){
+    let y = 8;
+    console.log(`This is Function One Local Variabe "${y}" & Global Variable "${z}"`);
+}
