@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1> JavaScript Basics </h1>
-    <hr>
+    <!-- <h1> JavaScript Basics </h1>
+    <hr> -->
 
     <!-- <label id="countLabel">0 </label>
     <div class="btnContainer">
@@ -17,6 +17,7 @@
         <button id="increaseBtn" class="buttons">Increase</button>
     </div> -->
     <!-- <input id="myText" type="text"><br><br> -->
+    <!-- 
     <input type="checkbox" id="myCheckBox">
     <label for="myCheckBox">Subscribe</label><br>
 
@@ -30,9 +31,23 @@
     <button id="mySubmit" type="submit">Submit</button><br>
 
     <p id="subResult"></p>
-    <p id="paymentResult"></p>
+    <p id="paymentResult"></p> 
+    -->
 
-    <script src="index.js"></script>
+    <form>
+        <h1>Temperature Conversion</h1>
+        <input type="number" id="textBox" value="0"><br><br>
+
+        <input type="radio" id="toFahrenheit" name="unit">
+        <label for="toFahrenheit">Celsius ➡️ Fahrenheit</label><br>
+
+        <input type="radio" id="toCelsius" name="unit">
+        <label for="toCelsius">Fahrenheit ➡️ Celsius</label><br>
+        <button type="button" onclick="convert()">Submit</button><br>
+        <p id="result"></p>
+    </form>
+
+    <!-- <script src="index.js"></script> -->
     <!-- <script src="index_one.js"></script> -->
     <script src="index_two.js"></script>
 </body>

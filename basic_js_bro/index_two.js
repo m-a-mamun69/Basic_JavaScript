@@ -161,7 +161,7 @@ console.log(`Is it Valid Email: ${isValidEmail("mamun.com")}`);
 
 // --------------- Variable Scope  -------------- Date: 8.11.24
 
-
+/*
 // Global Vriable.
 let z = "Mamun";
 
@@ -189,4 +189,31 @@ function functionOne(){
 function functionTwo(){
     let y = 8;
     console.log(`This is Function One Local Variabe "${y}" & Global Variable "${z}"`);
+}
+*/
+
+
+// ------------------- TEMPERATURE CONVERSION ------------------ !
+
+
+const textBox = document.getElementById("textBox");
+const toFahrenheit = document.getElementById("toFahrenheit");
+const toCelsius = document.getElementById("toCelsius");
+const result = document.getElementById("result");
+let temp;
+
+function convert(){
+    if(toFahrenheit.checked){
+        temp = Number(textBox.value);
+        temp = temp * 9 / 5 + 32;
+        result.textContent = temp.toFixed(1) + "°F";
+    }
+    else if(toCelsius.checked){
+        temp = Number(textBox.value);
+        temp = temp * 9 / 5 + 32;
+        result.textContent = temp.toFixed(1) + "°C";
+    }
+    else{
+        result.textContent = "Select A Unit";
+    }
 }
