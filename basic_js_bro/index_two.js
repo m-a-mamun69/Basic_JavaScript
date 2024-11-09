@@ -195,7 +195,7 @@ function functionTwo(){
 
 // ------------------- TEMPERATURE CONVERSION ------------------ !
 
-
+/*
 const textBox = document.getElementById("textBox");
 const toFahrenheit = document.getElementById("toFahrenheit");
 const toCelsius = document.getElementById("toCelsius");
@@ -217,3 +217,35 @@ function convert(){
         result.textContent = "Select A Unit";
     }
 }
+*/
+
+
+// --------------- Variable Scope  -------------- Date: 8.11.24
+
+
+let fruits = ["apple","orange","banana", "coconut"];
+// fruits[3] = "coconut";
+
+// fruits.push("coconut");
+// fruits.pop("coconut");
+// fruits.unshift("mango");
+// fruits.shift();
+
+// console.log(fruits);
+// console.log(fruits[0]);
+// console.log(fruits[1]);
+// console.log(fruits[2]);
+// console.log(fruits[3]);
+
+// let numOfFruits = fruits.length;
+// let index = fruits.indexOf("banana");
+
+// for(let i = 0; i < fruits.length; i++){
+//     console.log(fruits[i]);
+// }
+
+fruitss = fruits.sort().reverse();
+for(let fruit of fruitss){
+    console.log(fruit);
+}
+
