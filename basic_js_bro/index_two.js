@@ -254,7 +254,7 @@ for(let fruit of fruitss){
 
 // --------------- JS 2D ARRAYS  -------------- Date: 10.11.24
 
-
+/*
 const matrix = [[1,2,3],
                 [4,5,6],
                 [7,8,9],
@@ -277,3 +277,56 @@ for (let row of matrix){
     const rowString = row.join(' ');
     console.log(rowString);
 }
+*/
+
+
+// ------------------- REST PARAMETERS ------------------ !
+
+
+// function openFridge(...foods){
+//     console.log(...foods);
+// }
+
+// function getFood(...foods){
+//     return foods;
+// }
+
+// const food1 = 'pizza';
+// const food2 = 'hamburger';
+// const food3 = 'hotDog';
+// const food4 = 'tea';
+// const food5 = 'chickenFry'
+
+// // openFridge(food1, food2, food3, food4,food5);
+// const foods = getFood(food1, food2, food3, food4,food5);
+// console.log(foods);
+
+// For Sum
+function sum(...numbers){
+    let result = 0;
+    for(let number of numbers){
+        result += number;
+    }
+    return result;
+}
+const total = sum(1,2,5,85,6,95,5,54);
+console.log(`Your total is: ${total}`);
+
+// For Average
+function getAverage(...numbers){
+    let result = 0;
+    for(let number of numbers){
+        result += number;
+    }
+    return result / numbers.length;
+}
+const avg = getAverage(85,6,95,5,54);
+console.log(`Your Average is: ${avg}`);
+
+// For Strings
+function combineString(...strings){
+    return strings.join(" ");
+}
+
+const fullName = combineString('Mr', 'M', 'A', 'MAMUN');
+console.log(fullName);
