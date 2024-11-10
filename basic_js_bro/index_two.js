@@ -282,7 +282,7 @@ for (let row of matrix){
 
 // ------------------- REST PARAMETERS ------------------ !
 
-
+/*
 // function openFridge(...foods){
 //     console.log(...foods);
 // }
@@ -330,3 +330,22 @@ function combineString(...strings){
 
 const fullName = combineString('Mr', 'M', 'A', 'MAMUN');
 console.log(fullName);
+*/
+
+
+// ------------------- SPREAD OPERATOR ------------------ !
+
+
+// let numbers = [1, 2, 3, 4, 5];
+// let maximum = Math.max(...numbers);
+// let minimum = Math.min(...numbers);
+
+// let userName = "RashidCode";
+// let letters = [...userName].join("-");
+
+let fruits = ["apply", "orange", "banana"];
+let vegetables = ["carrots", "celery", "potatoes"];
+
+let foods = [...fruits, ...vegetables, "eggs", "milk"]
+
+console.log(foods);
