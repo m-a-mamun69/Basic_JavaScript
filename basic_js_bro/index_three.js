@@ -22,7 +22,7 @@ function rollDice(){
 
 // -------------- JS Random Password Generator -------------- Date: 12.11.24
 
-
+/*
 function generatePassword(length, includeLowercase, includeUppercase, includeNumbers, includeSymbols){
     const lowercaseChars = "abcdefghijklmnopqrstuvwxyz";
     const uppercaseChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -65,3 +65,54 @@ const password = generatePassword(passwordLength,
                                 includeSymbols); 
 
 console.log(`Generated password: ${password}`);
+*/
+
+// ----------------- JS CallBack Function ----------------- !
+
+// Explanation
+/*
+callback = a function that is passed as an argument
+                   to another function.
+
+                   used to handle asynchronous operations:
+                   1. Reading a file
+                   2. Network requests
+                   3. Interacting with databases
+*/
+
+/*
+// hello(goodbay);
+// hello(leave);
+hello(wait);
+
+function hello(callback){
+    console.log("Hello!, Guys");
+    callback();
+}
+
+function goodbay(){
+    console.log("Goodbye")
+}
+
+function leave(){
+    console.log("Leave")
+}
+function wait(){
+    console.log("Wait")
+}
+*/
+
+sum(displayPage, 8, 5);
+
+function sum(callback, x, y){
+    let result = x + y;
+    callback(result);
+}
+
+function displayConsole(result){
+    console.log(result);
+}
+
+function displayPage(result){
+    document.getElementById("myH3").textContent = result;
+}
