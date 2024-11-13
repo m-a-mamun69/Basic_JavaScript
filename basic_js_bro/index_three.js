@@ -182,7 +182,7 @@ function display(element){
 */
 
 
-// -------------- JS Random Password Generator -------------- Date: 12.11.24
+// -------------- JS map() Method -------------- Date: 13.11.24
 
 // Explanation
 /*
@@ -221,7 +221,7 @@ function lowerCase(element){
 }
 */
 
-
+/*
 const dates = ["2024-1-10","2025-2-20","2026-3-30"];
 const formattedDates = dates.map(formatDates);
 
@@ -230,4 +230,65 @@ console.log(formattedDates);
 function formatDates(element){
     const parts = element.split("-");
     return `${parts[1]}/${parts[2]}/${parts[0]}`;
+}
+*/
+
+
+// ----------------- JS filter() Method ----------------- !
+
+// Explanation
+/*
+.filter() = creates a new array by filtering out
+                elements with a callback
+*/
+
+/*
+let numbers = [12, 28, 37, 48, 55, 63, 78];
+let evenNums = numbers.filter(isEven);
+let oddNums = numbers.filter(isOdd);
+
+console.log(`The Even Numbers Are: ${evenNums}`);
+console.log(`The Odd Numbers Are: ${oddNums}`);
+
+function isEven(element){
+    return element % 2 === 0;
+}
+
+function isOdd(element){
+    return element % 2 !== 0;
+}
+*/
+
+/*
+const ages = [16, 17, 18, 18, 19, 20, 60];
+const adults = ages.filter(isAdult);
+const children = ages.filter(isChild);
+
+console.log(`Adults are: ${adults}`);
+console.log(`Childrens are: ${children}`);
+
+function isAdult(element){
+    return element >= 18;
+}
+
+function isChild(element){
+    return element < 18;
+}
+*/
+
+
+const words = ["apple", "orange", "banana", "dragon", "mango", "watermelon"];
+
+const shortWords = words.filter(getShortWords);
+const longWords = words.filter(getLongWords);
+
+console.log(`Under 6 Alphabet Words are: ${shortWords}`);
+console.log(`Upper 6 Alphabet Words are: ${longWords}`);
+
+function getShortWords(element){
+    return element.length <= 5;
+}
+
+function getLongWords(element){
+    return element.length > 5;
 }
