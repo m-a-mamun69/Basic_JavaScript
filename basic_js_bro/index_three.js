@@ -295,12 +295,12 @@ function getLongWords(element){
 */
 
 
-// -------------- JS map() Method -------------- Date: 14.11.24
+// -------------- JS .reduce() Method -------------- Date: 14.11.24
 
 // Explanation
 /*
 .reduce() = reduce the elements of an array
-                    to a single value
+            to a single value
 */ 
 
 /*
@@ -314,6 +314,7 @@ function sum(accumulator, element){
 }
 */
 
+/*
 const grades = [75, 50, 90, 80, 65, 95];
 const maximum = grades.reduce(getMax);
 const minimum = grades.reduce(getMin);
@@ -328,3 +329,54 @@ function getMax(accumulator, element){
 function getMin(accumulator, element){
     return Math.min(accumulator, element);
 }
+*/
+
+
+// ----------------- JS Function Expressions ----------------- !
+
+// Explanation
+/*
+function expressions = a way to define functions as
+                        values or variables.
+
+ 1. Callbacks in asynchronous operations
+ 2. Higher-Order Functions
+ 3. Closures
+ 4. Event Listeners
+ */
+
+// const hello = function(){
+//     console.log(`Hello, World!`)
+// }
+// hello();
+
+// setTimeout(function(){
+//     console.log(`Hello, World!`)
+// },3000);
+
+const numbers = [1, 2, 3, 4, 5, 6];
+const squares = numbers.map(function(element){
+    return Math.pow(element, 2);
+});
+
+const cobes = numbers.map(function(element){
+    return Math.pow(element, 3);
+});
+
+const evenNums = numbers.filter(function(element){
+    return element % 2 === 0;
+});
+
+const oddNums = numbers.filter(function(element){
+    return element % 2 !== 0;
+});
+
+const total = numbers.reduce(function(accumulator, element){
+    return accumulator + element;
+});
+
+console.log(`Square Numbers: ${squares}`);
+console.log(`Cube Numbers: ${cobes}`);
+console.log(`Even Numbers: ${evenNums}`);
+console.log(`Odd Numbers: ${oddNums}`);
+console.log(`Total of Numbers: ${total}`);
