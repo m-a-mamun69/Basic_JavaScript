@@ -1,5 +1,5 @@
 
-// -------------- JS .reduce() Method -------------- Date: 14.11.24
+// -------------- JS ARROW FUNCTIONS -------------- Date: 15.11.24
 
 // Explanation
 /*
@@ -15,6 +15,7 @@ const hello = (name, age) => {console.log(`Hello, ${name}! `)
 hello("Rashid", 25);
 */
 
+/*
 setTimeout( () => console.log("Hello"), 3000);
 
 const numbers = [1, 2, 3, 4, 5, 6];
@@ -30,4 +31,42 @@ console.log(`Cobe Numbers are, ${cubes}! `);
 console.log(`Even Numbers are, ${evenNumbers}! `);
 console.log(`Odd Numbers are, ${oddNumbers}! `);
 console.log(`Total of Numbers, ${total}! `);
+*/
 
+
+// ---------------- JS  ---------------- !
+
+// Explanation
+/*
+object = A collection of related properties and/or methods
+               Can represent real world objects (people, products, places)
+               object = {key:value, function()}
+*/
+
+const person = {
+    firstName: "Samim",
+    lastName: "Reza",
+    age: 27,
+    isEmployed: true,
+    sayHello: function(){console.log("Hi! I am Samim Reza!")},
+    eat: function(){console.log("Hi! I am eating Kebab!")},
+}
+
+const person2 = {
+    firstName: "Mamun",
+    lastName: "Rashid",
+    age: 26,
+    isEmployed: false,
+    sayHello: () => console.log("Hi! I am Mamun Rashid!"),
+    eat: () => console.log("Hi! I am eating Beef Barger!"),
+}
+
+person.sayHello();
+person2.sayHello();
+
+person.eat();
+person2.eat();
+// console.log(person.firstName);
+// console.log(person.lastName);
+// console.log(person.age);
+// console.log(person.isEmployed);
