@@ -76,7 +76,13 @@ person2.eat();
 
 // -------------- JS THIS Keywords -------------- Date: 16.11.24
 
+// Explanation
+/*
+this = reference to the object where THIS is used
+          (the object depends on the immediate context)
+*/
 
+/*
 const person1 = {
     name: "mRashid",
     favFood: "hamBurgers",
@@ -93,3 +99,40 @@ const person2 = {
 
 person1.eat();
 person2.eat();
+*/
+
+
+// ------------------- JS CONSTRUCTORS   ------------------- !
+
+// Explanation
+/*
+constructor = special method for defining the
+                         properties and methods of objects
+*/
+
+
+function Car(make, model, year, color){
+    this.make = make,
+    this.model = model,
+    this.year = year,
+    this.color = color
+}
+
+const car1 = new Car("Ford", "Mustang", 2024, "red");
+const car2 = new Car("BMW", "7 Series", 2024, "red");
+const car3 = new Car("Mercedes", "S-Class", 2024, "red");
+
+console.log(car1.make);
+console.log(car1.model);
+console.log(car1.year);
+console.log(car1.color);
+
+console.log(car2.make);
+console.log(car2.model);
+console.log(car2.year);
+console.log(car2.color);
+
+console.log(car3.make);
+console.log(car3.model);
+console.log(car3.year);
+console.log(car3.color);
