@@ -34,7 +34,7 @@ console.log(`Total of Numbers, ${total}! `);
 */
 
 
-// ---------------- JS  ---------------- !
+// ------------------- JS Object  ------------------- !
 
 // Explanation
 /*
@@ -43,6 +43,7 @@ object = A collection of related properties and/or methods
                object = {key:value, function()}
 */
 
+/*
 const person = {
     firstName: "Samim",
     lastName: "Reza",
@@ -70,3 +71,25 @@ person2.eat();
 // console.log(person.lastName);
 // console.log(person.age);
 // console.log(person.isEmployed);
+*/
+
+
+// -------------- JS THIS Keywords -------------- Date: 16.11.24
+
+
+const person1 = {
+    name: "mRashid",
+    favFood: "hamBurgers",
+    sayHello: function(){console.log(`Hi! I am ${this.favFood}`)},
+    eat: function(){console.log(`${this.name} is eating ${this.favFood}`)}
+}
+
+const person2 = {
+    name: "mHasan",
+    favFood: "Pizza",
+    sayHello: function(){console.log(`Hi! I am ${this.favFood}`)},
+    eat: function(){console.log(`${this.name} is eating ${this.favFood}`)}
+}
+
+person1.eat();
+person2.eat();
