@@ -102,7 +102,7 @@ person2.eat();
 */
 
 
-// ------------------- JS CONSTRUCTORS   ------------------- !
+// ------------------- JS CONSTRUCTORS ------------------- !
 
 // Explanation
 /*
@@ -110,7 +110,7 @@ constructor = special method for defining the
                          properties and methods of objects
 */
 
-
+/*
 function Car(make, model, year, color){
     this.make = make,
     this.model = model,
@@ -136,3 +136,41 @@ console.log(car3.make);
 console.log(car3.model);
 console.log(car3.year);
 console.log(car3.color);
+*/
+
+
+// -------------- JS CLASSES -------------- Date: 17.11.24
+
+// Explanation
+/*
+class = (ES6 feature) provides a more structured and cleaner way to 
+              work with objects compared to traditional constructor functions
+              ex. static keyword, encapsulation, inheritance
+*/
+
+class Product{
+    constructor(name, price){
+        this.name = name;
+        this.price = price;
+    }
+
+    displayProduct(){
+        console.log(`Product: ${this.name}`);
+        console.log(`Price: BDT ${this.price.toFixed(2)}`);
+    }
+
+    calculateTotal(salesTax){
+        return this.price + (this.price * salesTax)
+    }
+}
+
+const salesTax = 0.05;
+
+const product1 = new Product("Shirt", 999.99);
+const product2 = new Product("Pants", 1890.546);
+const product3 = new Product("Underwear", 450);
+
+product3.displayProduct();
+
+const total = product3.calculateTotal(salesTax);
+console.log(`Total Price( with 5% Tax ): BDT ${total.toFixed(2)}`);
