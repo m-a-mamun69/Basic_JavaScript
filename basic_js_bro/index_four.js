@@ -148,6 +148,7 @@ class = (ES6 feature) provides a more structured and cleaner way to
               ex. static keyword, encapsulation, inheritance
 */
 
+/*
 class Product{
     constructor(name, price){
         this.name = name;
@@ -174,3 +175,63 @@ product3.displayProduct();
 
 const total = product3.calculateTotal(salesTax);
 console.log(`Total Price( with 5% Tax ): BDT ${total.toFixed(2)}`);
+*/
+
+
+// ------------------- JS CONSTRUCTORS ------------------- !
+
+// Explanation
+/*
+static = keyword that defines properties or methods that belong 
+              to a class itself rather than the objects created
+              from that class (class owns anything static, not the objects)
+*/
+
+/*
+class MathUtil{
+    static PI = 3.14159;
+
+    static getDiameter(radius){
+        return radius * 2;
+    }
+
+    static getCricumference(radius){
+        return 2 * this.PI * radius;
+    }
+
+    static getArea(radius){
+        return this.PI * radius * radius;
+    }
+}
+
+console.log(MathUtil.PI);
+console.log(MathUtil.getDiameter(10));
+console.log(MathUtil.getCricumference(10));
+console.log(MathUtil.getArea(10));
+*/
+
+class User{
+    static userCount = 0;
+
+    constructor(username){
+        this.username = username;
+        User.userCount++;
+    }
+
+    static getUsersCount(){
+        console.log(`There are ${User.userCount} Users Online`)
+    }
+
+    sayHello(){
+        console.log(`Hello, Your UserName: ${this.username}`);
+    }
+}
+
+const user1 = new User("mRashid");
+const user2 = new User("mHasan");
+const user3 = new User("mSamim");
+
+user1.sayHello();
+user2.sayHello();
+user3.sayHello();
+User.getUsersCount();
