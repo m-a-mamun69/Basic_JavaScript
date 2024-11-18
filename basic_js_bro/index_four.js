@@ -239,7 +239,7 @@ User.getUsersCount();
 */
 
 
-// -------------- JS CLASSES -------------- Date: 18.11.24
+// -------------- JS INHERITANCE -------------- Date: 18.11.24
 
 // Explanation
 /*
@@ -248,6 +248,7 @@ inheritance = allows a new class to inherit properties and methods
                         Helps with code reusability
 */
 
+/*
 class Animal{
     alive = true;
 
@@ -291,3 +292,72 @@ console.log(fish.alive);
 fish.eat();
 fish.sleep();
 fish.swin();
+*/
+
+
+// ------------------- JS SUPER keyword ------------------- !
+
+// Explanation
+/*
+super = keyword is used in classes to call the constructor or
+              access the properties and methods of a parent (superclass)
+              this = this object
+              super = the parent
+*/
+
+class Animal{
+
+    constructor(name, age){
+        this.name = name;
+        this.age = age;
+    }
+
+    move(speed){
+        console.log(`The ${this.name} moves at a speed of ${speed} mph`)
+    }
+}
+
+class Rabbit extends Animal{
+
+    constructor(name, age, runSpeed){
+        super(name, age);
+        this.runSpeed = runSpeed;
+    }
+
+    run(){
+        console.log(`This ${this.name} is Running.`);
+        super.move(this.flySpeed);
+    }
+}
+
+class Fish extends Animal{
+
+    constructor(name, age, swimSpeed){
+        super(name, age);
+        this.swimSpeed = swimSpeed;
+    }
+
+    swim(){
+        console.log(`This ${this.name} is swimming.`);
+        super.move(this.swimSpeed);
+    }
+}
+
+class Hawk extends Animal{
+
+    constructor(name, age, flySpeed){
+        super(name, age);
+        this.flySpeed = flySpeed;
+    }
+
+    fly(){
+        console.log(`This ${this.name} is Flying.`);
+        super.move(this.flySpeed);
+    }
+}
+
+const rabbit = new Rabbit("rabbit", 1, 30);
+const fish = new Fish("fish", 2, 15);
+const hwak = new Hawk("hawk", 3, 60);
+
+fish.swim();
