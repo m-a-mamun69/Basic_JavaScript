@@ -178,7 +178,7 @@ console.log(`Total Price( with 5% Tax ): BDT ${total.toFixed(2)}`);
 */
 
 
-// ------------------- JS CONSTRUCTORS ------------------- !
+// ------------------- JS STATIC keyword ------------------- !
 
 // Explanation
 /*
@@ -210,6 +210,7 @@ console.log(MathUtil.getCricumference(10));
 console.log(MathUtil.getArea(10));
 */
 
+/*
 class User{
     static userCount = 0;
 
@@ -235,3 +236,58 @@ user1.sayHello();
 user2.sayHello();
 user3.sayHello();
 User.getUsersCount();
+*/
+
+
+// -------------- JS CLASSES -------------- Date: 18.11.24
+
+// Explanation
+/*
+inheritance = allows a new class to inherit properties and methods 
+                        from an existing class (paren -> child). 
+                        Helps with code reusability
+*/
+
+class Animal{
+    alive = true;
+
+    eat(){
+        console.log(`This ${this.name} is eating`);
+    }
+    sleep(){
+        console.log(`This ${this.name} is sleeping.`);
+    }
+}
+
+class Rabbit extends Animal{
+    name = "rabbit";
+
+    run(){
+        console.log(`This ${this.name} is Running.`);
+    }
+}
+
+class Fish extends Animal{
+    name = "fish";
+
+    swin(){
+        console.log(`This ${this.name} is swimming.`);
+    }
+}
+
+class Hawk extends Animal{
+    name = "hawk";
+
+    fly(){
+        console.log(`This ${this.name} is Flying.`);
+    }
+}
+
+const rabbit = new Rabbit();
+const fish = new Fish();
+const hwak = new Hawk();
+
+console.log(fish.alive);
+fish.eat();
+fish.sleep();
+fish.swin();
