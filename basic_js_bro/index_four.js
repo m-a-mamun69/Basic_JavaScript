@@ -375,7 +375,8 @@ setter = special method that makes a property writeable
 validate and modify a value when reading/writing a property
 */
 
-// Setters Method
+/*
+// Setters Method(set) & Getters(get)
 class Rectangle{
 
     constructor(width, height){
@@ -394,14 +395,92 @@ class Rectangle{
 
     set height(newHeight){
         if(newHeight > 0){
-            this._width = newHeight;
+            this._heigth = newHeight;
         }
         else{
             console.error("Width must be a positive number.");
         }
     }
+
+    get width(){
+        return `${this._width.toFixed(1)}cm`;
+    }
+
+    get height(){
+        return `${this._heigth.toFixed(1)}cm`;
+    }
+
+    get area(){
+        return `${(this._width * this._heigth).toFixed(1)}cm`;
+    }
+
+
 }
 
-const rectangle = new Rectangle(3, 4);
+const rectangle = new Rectangle(3, 5);
 console.log(rectangle.width);
 console.log(rectangle.height);
+console.log(rectangle.area);
+*/
+
+
+class Person{
+
+    constructor(firstName, lastName, age){
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.age = age;
+    }
+
+    set firstName(newFirstName){
+        if(typeof newFirstName === "string" && newFirstName.length > 0){
+            this._firstName = newFirstName;
+        }
+        else{
+            console.error("First name must be a non-empty string");
+        }
+    }
+
+    set lastName(newLastName){
+        if(typeof newLastName === "string" && newLastName.length > 0){
+            this._lastName = newLastName;
+        }
+        else{
+            console.error("Last name must be a non-empty string");
+        }
+    }
+
+    set age(newAge){
+        if(typeof newAge === "number" && newAge >= 0){
+            this._age = newAge;
+        }
+        else{
+            console.error("Age must be a non-negative Number");
+        }
+    }
+
+    get firstName(){
+        return this._firstName;
+    }
+
+    get lastName(){
+        return this._lastName;
+    }
+
+    get fullName(){
+        return this._firstName + " " + this._lastName;
+    }
+
+    get age(){
+        return this._age;
+    }
+}
+
+
+const person = new Person("Mamun", "Rashid", 26);
+
+console.log(person.firstName);
+console.log(person.lastName);
+console.log(person.fullName);
+console.log(person.age);
+
