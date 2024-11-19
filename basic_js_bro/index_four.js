@@ -304,7 +304,7 @@ super = keyword is used in classes to call the constructor or
               this = this object
               super = the parent
 */
-
+/*
 class Animal{
 
     constructor(name, age){
@@ -326,7 +326,7 @@ class Rabbit extends Animal{
 
     run(){
         console.log(`This ${this.name} is Running.`);
-        super.move(this.flySpeed);
+        super.move(this.runSpeed);
     }
 }
 
@@ -361,3 +361,47 @@ const fish = new Fish("fish", 2, 15);
 const hwak = new Hawk("hawk", 3, 60);
 
 fish.swim();
+hwak.fly();
+rabbit.run();
+*/
+
+// -------------- JS Setters & Getters Method -------------- Date: 19.11.24
+
+// Explanation
+/*
+getter = special method that makes a property readable
+setter = special method that makes a property writeable
+
+validate and modify a value when reading/writing a property
+*/
+
+// Setters Method
+class Rectangle{
+
+    constructor(width, height){
+        this.width = width;
+        this.height = height;
+    }
+
+    set width(newWidth){
+        if(newWidth > 0){
+            this._width = newWidth;
+        }
+        else{
+            console.error("Width must be a positive number.");
+        }
+    }
+
+    set height(newHeight){
+        if(newHeight > 0){
+            this._width = newHeight;
+        }
+        else{
+            console.error("Width must be a positive number.");
+        }
+    }
+}
+
+const rectangle = new Rectangle(3, 4);
+console.log(rectangle.width);
+console.log(rectangle.height);
