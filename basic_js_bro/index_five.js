@@ -125,7 +125,7 @@ for(const property in person.address){
 }
 */
 
-
+/*
 class Person{
     constructor(name, age, ...address){
         this.name = name;
@@ -155,3 +155,32 @@ const person3 = new Person("Samim Reza", 27, "Sapahar",
                                             "Bangladesh");
 console.log(person2.name);
 console.log(person2.address.city);
+*/
+
+
+// -------------- JS ARRAYS of OBJECTS  -------------- Date: 21.11.24
+
+
+const fruits = [{name:"apple", color:"red", calories: 95},
+                {name:"orange", color:"orange", calories: 45},
+                {name:"banana", color:"yellow", calories: 105},
+                {name:"coconut", color:"white", calories: 159},
+                {name:"pineapple", color:"yellow", calories: 37}
+];
+
+// fruits.push({name: "mango", color: "purple", calories: 62});
+
+// console.log(fruits);
+
+// fruits.forEach(fruits => console.log(fruits.color))
+
+// const fruitsNames = fruits.map(fruits => fruits.name);
+// console.log(fruitsNames);
+
+// const yellowFruits = fruits.filter(fruits => fruits.color === "yellow");
+// const lowCalories = fruits.filter(fruits => fruits.calories < 100);
+// console.log(lowCalories);
+
+const maxCalories = fruits.reduce((max, fruit) => fruit.calories > max.calories ? fruit: max);
+const minCalories = fruits.reduce((min, fruit) => fruit.calories < min.calories ? fruit: min);
+console.log(minCalories);
