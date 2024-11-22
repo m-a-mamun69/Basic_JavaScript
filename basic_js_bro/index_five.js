@@ -187,7 +187,7 @@ console.log(minCalories);
 */
 
 
-// ----------------- JS SORTINg ---------------- Date: 21.11.24
+// ----------------- JS SORTINg ---------------- Date: 22.11.24
 
 // Explanation
 /*
@@ -196,6 +196,7 @@ sort() = method used to sort elements of an array in place.
               lexicographic = (alphabet + numbers + symbols) as strings
 */
 
+/*
 let fruits = ["apple", "orange", "banana", "coconut", "mango"];
 let numbers = [5, 12, 13, 58, 41, 8, 2];
 const people = [{name: "Mamun", age: 30, gpa: 3.0},
@@ -211,3 +212,21 @@ numbers.sort((a, b) => a - b);
 people.sort((a, b) => a.name.localeCompare(b.name));
 
 console.log(people);
+*/
+
+// ------------------- JS SHUFFLE AN ARRAY  ------------------- !
+
+//Fisher-Yates algorithm.
+const cards = ['A', 2, 3, 4, 5, 6, 7, 8, 9, 10, 'J', 'K', 'Q'];
+
+// cards.sort(() => Math.random() - 0.5);
+
+shuffle(cards);
+console.log(cards);
+
+function shuffle(array){
+    for(let i = array.length - 1; i > 0; i--){
+        const random = Math.floor(Math.random() * (i + 1));
+        [array[i], array[random]] = [array[random], array[i]];
+    }
+}
