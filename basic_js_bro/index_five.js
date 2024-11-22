@@ -160,7 +160,7 @@ console.log(person2.address.city);
 
 // -------------- JS ARRAYS of OBJECTS  -------------- Date: 21.11.24
 
-
+/*
 const fruits = [{name:"apple", color:"red", calories: 95},
                 {name:"orange", color:"orange", calories: 45},
                 {name:"banana", color:"yellow", calories: 105},
@@ -184,3 +184,30 @@ const fruits = [{name:"apple", color:"red", calories: 95},
 const maxCalories = fruits.reduce((max, fruit) => fruit.calories > max.calories ? fruit: max);
 const minCalories = fruits.reduce((min, fruit) => fruit.calories < min.calories ? fruit: min);
 console.log(minCalories);
+*/
+
+
+// ----------------- JS SORTINg ---------------- Date: 21.11.24
+
+// Explanation
+/*
+sort() = method used to sort elements of an array in place.
+              Sorts elements as strings in lexicographic order, not alphabetical
+              lexicographic = (alphabet + numbers + symbols) as strings
+*/
+
+let fruits = ["apple", "orange", "banana", "coconut", "mango"];
+let numbers = [5, 12, 13, 58, 41, 8, 2];
+const people = [{name: "Mamun", age: 30, gpa: 3.0},
+                {name: "Rony", age: 37, gpa: 1.5},
+                {name: "Samim", age: 51, gpa: 2.5},
+                {name: "Harun", age: 27, gpa: 4.0}
+]
+
+fruits.sort();
+numbers.sort((a, b) => a - b);
+// people.sort((a, b) => a.age - b.age);
+// people.sort((a, b) => a.gpa - b.gpa);
+people.sort((a, b) => a.name.localeCompare(b.name));
+
+console.log(people);
