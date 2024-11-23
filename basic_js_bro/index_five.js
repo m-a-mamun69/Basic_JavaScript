@@ -241,6 +241,7 @@ Data objects = Objects that contain values that represent dates and times
                 These date objects can be changed and formatted
 */
 
+/*
 const date = new Date();
 // Date(year, month, day, hour, minute, second, ms)
 // const date = new Date(2024, 0, 2, 3, 4, 5);
@@ -277,5 +278,82 @@ if(date2 > date1){
 else{
     console.log("Is Not a 'Happy New Year'!");
 }
+*/
 
 
+// ------------------- JS CLOSURES ------------------- !
+
+// Explanation
+/*
+closure = A function defined inside of another function, 
+                 the inner function has access to the variables 
+                 and scope of the outer function.
+                 Allow for private variables and state maintenance
+                 Used frequently in JS frameworks: React, Vue, Angular
+*/
+
+/*
+function outer(){
+    let message = "Hello";
+
+    function inner(){
+        console.log(message);
+    }
+    inner();
+}
+
+// message = "Goodbye";
+outer();
+*/
+
+/*
+function createCounter(){
+    let count = 0;
+
+    function increment(){
+        count++;
+        console.log(`Count Increased to ${count}`);
+    }
+
+    function getCount(){
+        return count;
+    }
+
+    return {increment, getCount};
+}
+
+const counter =  createCounter();
+
+counter.increment();
+counter.increment();
+counter.increment();
+
+console.log(`The current count is ${counter.getCount()}`);
+*/
+
+function createGame(){
+
+    let score = 0;
+
+    function increaseScore(points){
+        score += points;
+        console.log(`+${points}pts`);
+    }
+
+    function decreaseScore(points){
+        score -= points;
+        console.log(`-${points}pts`);
+    }
+
+    function getScore(){
+        return score;
+    }
+    return {increaseScore, decreaseScore, getScore};
+}
+
+const game = createGame();
+
+game.increaseScore(5);
+game.increaseScore(10);
+game.decreaseScore(3);
+console.log(`The Final score is ${game.getScore()}`);
