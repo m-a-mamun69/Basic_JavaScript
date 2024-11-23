@@ -215,7 +215,7 @@ console.log(people);
 */
 
 // ------------------- JS SHUFFLE AN ARRAY  ------------------- !
-
+/*
 //Fisher-Yates algorithm.
 const cards = ['A', 2, 3, 4, 5, 6, 7, 8, 9, 10, 'J', 'K', 'Q'];
 
@@ -230,3 +230,52 @@ function shuffle(array){
         [array[i], array[random]] = [array[random], array[i]];
     }
 }
+*/
+
+
+// ----------------- JS DATE Objects ---------------- Date: 23.11.24
+
+// Explanation
+/*
+Data objects = Objects that contain values that represent dates and times
+                These date objects can be changed and formatted
+*/
+
+const date = new Date();
+// Date(year, month, day, hour, minute, second, ms)
+// const date = new Date(2024, 0, 2, 3, 4, 5);
+// const date = new Date(1700000000000);
+// const year = date.getFullYear();
+// const month = date.getMonth();
+// const day = date.getDate();
+// const hour = date.getHours();
+// const minutes = date.getMinutes();
+// const seconds = date.getSeconds();
+// const dayOfWeek = date.getDay();
+
+// date.setFullYear(2024);
+// date.setMonth(0);
+// date.setDate(1);
+// date.setHours(2);
+// date.setMinutes(3);
+// date.setSeconds(4);
+
+// console.log(year);
+// console.log(month);
+// console.log(day);
+// console.log(hour);
+// console.log(minutes);
+// console.log(seconds);
+// console.log(dayOfWeek);
+
+const date1 = new Date("2024-12-31");
+const date2 = new Date("2025-01-01");
+
+if(date2 > date1){
+    console.log("Happy New Year!");
+}
+else{
+    console.log("Is Not a 'Happy New Year'!");
+}
+
+
