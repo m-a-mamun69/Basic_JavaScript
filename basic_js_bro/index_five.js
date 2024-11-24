@@ -378,6 +378,7 @@ setTimeout() = function in JavaScript that allows you to schedule
 //     setTimeout(() => window.alert("Hello"), 3000)
 // }
 
+/*
 let timeoutId;
 function startTimer(){
     timeoutId = setTimeout(() => window.alert("Hello"), 3000);
@@ -388,4 +389,36 @@ function clearTimer(){
     clearTimeout(timeoutId);
     console.log("Cleared");
 }
+*/
 
+
+// ------------------- JS console.time() ------------------- !
+
+// Explanation
+/*
+console.time() = tool that allows you to measure the time it takes
+                              for a section of code or process to execute
+                              Great for identifying performance "bottlenecks"
+*/
+
+function loadData(){
+    console.time("loadData");
+
+    for(let i = 0; i < 1000000000; i++){
+        //pretend to load some data
+    }
+
+    console.timeEnd("loadData");
+}
+
+function processData(){
+    console.time("processData");
+
+    for(let i = 0; i < 10000000; i++){
+        //pretend to load some data
+    }
+    console.timeEnd("processData");
+}
+
+loadData();
+processData();
