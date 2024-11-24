@@ -331,6 +331,7 @@ counter.increment();
 console.log(`The current count is ${counter.getCount()}`);
 */
 
+/*
 function createGame(){
 
     let score = 0;
@@ -357,3 +358,34 @@ game.increaseScore(5);
 game.increaseScore(10);
 game.decreaseScore(3);
 console.log(`The Final score is ${game.getScore()}`);
+*/
+
+
+// ----------------- JS setTimeout() ---------------- Date: 24.11.24
+
+// Explanation
+/*
+setTimeout() = function in JavaScript that allows you to schedule
+                           the execution of a function after an amount of time 
+                           Times are approximate
+                           setTimeout(callback, delay);
+*/
+
+// setTimeout(function(){window.alert("Hello"), 3000});
+// setTimeout(() => window.alert("Hello"), 3000)
+
+// function startTimer(){
+//     setTimeout(() => window.alert("Hello"), 3000)
+// }
+
+let timeoutId;
+function startTimer(){
+    timeoutId = setTimeout(() => window.alert("Hello"), 3000);
+    console.log("Started");
+}
+
+function clearTimer(){
+    clearTimeout(timeoutId);
+    console.log("Cleared");
+}
+
