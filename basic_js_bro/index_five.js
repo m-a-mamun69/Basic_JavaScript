@@ -401,6 +401,7 @@ console.time() = tool that allows you to measure the time it takes
                               Great for identifying performance "bottlenecks"
 */
 
+/*
 function loadData(){
     console.time("loadData");
 
@@ -422,3 +423,26 @@ function processData(){
 
 loadData();
 processData();
+*/
+
+// ----------------- JS Currency Format ---------------- Date: 25.11.24
+
+// Explanation
+/*
+.toLocaleString() = returns a string with a language 
+                                 sensitive representation of a number
+                                 .toLocaleString("locale", {options});
+*/
+
+
+let number = 123456.789;
+
+// number = number.toLocaleString("en-US");
+// number = number.toLocaleString("en-IN");
+// number = number.toLocaleString("bn-BD");
+
+// number = number.toLocaleString("en-US", {style: "currency", currency: "USD"});
+// number = number.toLocaleString("en-IN", {style: "currency", currency: "INR"});
+number = number.toLocaleString("bn-BD", {style: "currency", currency: "BDT"});
+
+console.log(number);
