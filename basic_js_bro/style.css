@@ -1,6 +1,40 @@
 
-/* ------ JS compound interest calculator ------- */
 
+/* --------- For JS Digital Clock CSS ------- */
+
+body{
+    background-image: url(others/background1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+}
+h1{
+    color: hsl(157, 93%, 56%);
+    font-size: 3em;
+    text-align: center;
+}
+#clock-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#clock{
+    font-family: Arial, sans-serif;
+    font-size: 6.5rem;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(75, 252, 169);
+    backdrop-filter: blur(3px);
+    background-color: hsla(0, 0%, 100%, 0.1);
+    width: 100%;
+}
+
+
+/* ------ For JS compound interest calculator CSS------- */
+/*
 body{
     font-family: Arial, sans-serif;
     background-color: hsl(0, 0%, 95%);
@@ -53,6 +87,7 @@ button:hover{
     color: hsl(120, 100%, 35%);;
     font-weight: bold;
 }
+*/
 
 /*
 #container{
