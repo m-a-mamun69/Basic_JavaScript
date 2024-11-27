@@ -53,9 +53,8 @@ setInterval(updateClock, 1000);
 */
 
 
-// ---------------- JS Stopwatch Code---------------- Date: 27.11.2024
-
-
+// ---------------- JS Stopwatch Code ---------------- Date: 27.11.2024
+/*
 const display = document.getElementById("display");
 let timer = null;
 let startTime = 0;
@@ -104,3 +103,28 @@ function update(){
 
     display.textContent = `${hours}:${minutes}:${seconds}:${milliseconds}`;
 }
+*/
+
+
+// ------------------- JS ES6 Modules ------------------- !
+
+// Explanation
+/*
+ES6 Module = An external file that contains reusable code
+             that can be imported into other JavaScript files
+             write resusable code for many different apps.
+             Can contain variables, classes, functions ... and more
+             Introduced as part of ECMAScript 2015 update
+*/
+
+import { PI, getCircumference, getArea, getVolume } from "./mathUtil.js";
+
+
+console.log(PI);
+const circumference = getCircumference(10);
+const area = getArea(10);
+const volume = getVolume(10);
+
+console.log(`Circumference: ${circumference.toFixed(2)}cm`);
+console.log(`Area: ${area.toFixed(2)}cm^2`);
+console.log(`Volume: ${volume.toFixed(2)}em^3`);

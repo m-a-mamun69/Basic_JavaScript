@@ -5,7 +5,7 @@
 
 
  /* -------- For JS STOPWATCH HTML -------- */
-
+/*
  body{
     display: flex;
     flex-direction: column;
@@ -63,6 +63,7 @@
 #resetBtn:hover{
     background-color: hsl(221, 95%, 50%);
 }
+*/
 
 /* --------- For JS Digital Clock CSS ------- */
 /*
