@@ -117,8 +117,8 @@ ES6 Module = An external file that contains reusable code
              Introduced as part of ECMAScript 2015 update
 */
 
+/*
 import { PI, getCircumference, getArea, getVolume } from "./mathUtil.js";
-
 
 console.log(PI);
 const circumference = getCircumference(10);
@@ -128,3 +128,39 @@ const volume = getVolume(10);
 console.log(`Circumference: ${circumference.toFixed(2)}cm`);
 console.log(`Area: ${area.toFixed(2)}cm^2`);
 console.log(`Volume: ${volume.toFixed(2)}em^3`);
+*/
+
+
+// ---------------- JS Synchronous & Asynchronous ---------------- Date: 28.11.2024
+// Explanation
+/*
+synchronous  = Executes line by line consecutively in a sequential manner 
+                            Code that waits for an operation to complete.
+
+asynchronous = Allows multiple operations to be performed 
+                              concurrently without waiting. Doesn't block the execution 
+                              flow and allows the program to continue.
+                              (I/O operations, network requests, fetching data)
+                              Handled with: Callbacks, Promises, Async/Await
+*/
+
+/*
+setTimeout(() => console.log("Task 1"), 3000);
+
+console.log("Task 2");
+console.log("Task 3");
+console.log("Task 4");
+*/
+
+function func1(callbacks){
+    setTimeout(() => {console.log("Task 1");
+                    callbacks()}, 3000);
+}
+
+function func2(){
+    console.log("Task 2");
+    console.log("Task 3");
+    console.log("Task 4");
+}
+
+func1(func2);
