@@ -193,6 +193,7 @@ finally{
 console.log("You have reached the end!");
 */
 
+/*
 try{
     const dividend = Number(window.prompt("Enter a Dividend: "));
     const divisor = Number(window.prompt("Enter a Divisor: "));
@@ -212,3 +213,4 @@ catch(error){
 }
 
 console.log("You have reached the end!");
+*/
