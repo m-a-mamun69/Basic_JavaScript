@@ -295,10 +295,86 @@ const element = document.querySelector("ul");
 
 element.style.backgroundColor = "gold";
 */
-
+/*
 const foods = document.querySelectorAll("li");
 
 // foods[4].style.backgroundColor = "gold";
 foods.forEach(food => {
     food.style.backgroundColor = "gold";
 });
+*/
+
+// ---------------- JS DOM Navigation ---------------- Date: 01.12.2024
+// Explanation
+/*
+DOM Navigation = The process of navigating through the structure 
+                                 of an HTML document using JavaScript.
+
+.firstElementChild
+.lastElementChild
+.nextElementSibling
+.previousElementSibling
+.parentElement
+.children
+*/
+
+// ---------- .firstElementChild ----------|
+/*
+// const element = document.getElementById("fruits");
+// const fristChild = element.firstElementChild;
+// fristChild.style.backgroundColor = "red";
+
+const ulElement = document.querySelectorAll("ul");
+
+ulElement.forEach(ulElement => {
+    const fristChild = ulElement.firstElementChild;
+    fristChild.style.backgroundColor = "lightgreen";
+});
+*/
+// ------------- .lastElementChild -------------|
+/*
+// const element = document.getElementById("fruits");
+// const lastChild = element.lastElementChild;
+// lastChild.style.backgroundColor = "red";
+
+const ulElement = document.querySelectorAll("ul");
+
+ulElement.forEach(ulElement => {
+    const lastChild = ulElement.lastElementChild;
+    lastChild.style.backgroundColor = "lightgreen";
+});
+*/
+
+// ------------- .nextElementSibling -------------|
+/*
+const element = document.getElementById("fruits");
+const nextSibling = element.nextElementSibling;
+nextSibling.style.backgroundColor = "green";
+*/
+
+// ------------- .previousElementSibling -------------|
+/*
+const element = document.getElementById("banana");
+const previousElement = element.previousElementSibling;
+previousElement.style.backgroundColor = "green";
+*/
+
+// ------------- .parentElement -------------|
+/*
+const element = document.getElementById("banana");
+const prntElement = element.parentElement;
+prntElement.style.backgroundColor = "green";
+*/
+// ------------- .children -------------|
+
+// const element = document.getElementById("fruits");
+// const children = element.children;
+
+// children[1].style.backgroundColor = "green";
+
+const element = document.getElementById("fruits");
+const children = element.children;
+
+Array.from(children).forEach(child => {
+    child.style.backgroundColor = "green";
+})
