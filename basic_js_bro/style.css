@@ -1,7 +1,11 @@
 
 
 
-
+#fruits{
+    border: 2px solid;
+    font-size: 2rem;
+    color: rgb(65, 65, 65);
+}
 
 
  /* -------- For JS STOPWATCH HTML -------- */

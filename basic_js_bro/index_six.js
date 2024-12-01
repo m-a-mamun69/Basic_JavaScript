@@ -371,10 +371,46 @@ prntElement.style.backgroundColor = "green";
 // const children = element.children;
 
 // children[1].style.backgroundColor = "green";
-
+/*
 const element = document.getElementById("fruits");
 const children = element.children;
 
 Array.from(children).forEach(child => {
     child.style.backgroundColor = "green";
-})
+});
+*/
+
+// ---------------- JS ADD/CHANGE HTML ---------------- !
+// Explanation
+// ----- STEP 1 CREATE THE ELEMENT
+// const newH1 = document.createElement("h1");
+// newH1.id = "myH1";
+// newH1.style.color = "tomato";
+// newH1.style.textAlign = "center"
+
+const newListItem = document.createElement("li");
+
+// ------ STEP 2 ADD ATTRIBUTES/PROPERTIES
+// newH1.textContent = "I Like barger";
+
+newListItem.textContent = "Coconut";
+newListItem.id = "coconut";
+newListItem.style.fontWeight = "bold";
+newListItem.style.backgroundColor = "tomato";
+
+
+// ----- STEP 3 APPEND ELEMENT TO DOM
+// document.body.append(newListItem);
+// document.body.prepend(newListItem);
+// document.getElementById("fruits").append(newListItem);
+// document.getElementById("fruits").prepend(newListItem);
+
+// const apple = document.getElementById("apple");
+// document.getElementById("fruits").insertBefore(newListItem, apple);
+
+const listItems = document.querySelectorAll("#fruits li");
+document.getElementById("fruits").insertBefore(newListItem, listItems[2]);
+
+
+// ----- REMOVE HTML ELEMENT
+// document.getElementById("box1").removeChild(newH1);
