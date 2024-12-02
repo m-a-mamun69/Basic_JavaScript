@@ -387,7 +387,7 @@ Array.from(children).forEach(child => {
 // newH1.id = "myH1";
 // newH1.style.color = "tomato";
 // newH1.style.textAlign = "center"
-
+/*
 const newListItem = document.createElement("li");
 
 // ------ STEP 2 ADD ATTRIBUTES/PROPERTIES
@@ -414,3 +414,39 @@ document.getElementById("fruits").insertBefore(newListItem, listItems[2]);
 
 // ----- REMOVE HTML ELEMENT
 // document.getElementById("box1").removeChild(newH1);
+*/
+
+
+// ---------------- JS eventListener ---------------- Date: 02.12.2024
+// Explanation
+/*
+eventListener = Listen for specific events to create interactive web pages
+                            events: click, mouseover, mouseout
+                            .addEventListener(event, callback);
+*/
+
+const myBox = document.getElementById("myBox");
+const myButton = document.getElementById("myButton");
+/*
+function changeColor(event){
+    event.target.style.backgroundColor = "tomato";
+    event.target.textContent = "OUCH! 😘"
+}
+
+myBox.addEventListener("click", changeColor);
+*/
+// Click Effect
+myButton.addEventListener("click", event => {
+    myBox.style.backgroundColor = "tomato";
+    myBox.textContent = "OUCH! =>F()😘"
+});
+// mouseover Effect
+myButton.addEventListener("mouseover", event => {
+    myBox.style.backgroundColor = "yellow";
+    myBox.textContent = "Don't do it😊"
+});
+// mouseout Effect
+myButton.addEventListener("mouseout", event => {
+    myBox.style.backgroundColor = "lightgreen";
+    myBox.textContent = "Click Me ➡️"
+});
