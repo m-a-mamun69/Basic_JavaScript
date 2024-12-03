@@ -425,16 +425,17 @@ eventListener = Listen for specific events to create interactive web pages
                             .addEventListener(event, callback);
 */
 
+/*
 const myBox = document.getElementById("myBox");
 const myButton = document.getElementById("myButton");
-/*
+
 function changeColor(event){
     event.target.style.backgroundColor = "tomato";
     event.target.textContent = "OUCH! 😘"
 }
 
 myBox.addEventListener("click", changeColor);
-*/
+
 // Click Effect
 myButton.addEventListener("click", event => {
     myBox.style.backgroundColor = "tomato";
@@ -450,3 +451,53 @@ myButton.addEventListener("mouseout", event => {
     myBox.style.backgroundColor = "lightgreen";
     myBox.textContent = "Click Me ➡️"
 });
+*/
+
+
+// --------------------- JS KEY EVENTS ------------------- !
+// Explanation
+/*
+eventListener = Listen for specific events to create interactive web pages
+                            events: keydown, keyup
+                            document.addEventListener(event, callback);
+*/
+/*
+document.addEventListener("keydown", event => {
+    console.log(`key Down = ${event.key}`);
+});
+
+document.addEventListener("keyup", event => {
+    console.log(`key up = ${event.key}`);
+});
+*/
+/*
+const myBox = document.getElementById("myBox")
+
+document.addEventListener("keydown", event => {
+    myBox.textContent = "😍";
+    myBox.style.backgroundColor = "tomato";
+});
+
+document.addEventListener("keyup", event => {
+    myBox.textContent = "😎";
+    myBox.style.backgroundColor = "gray";
+});
+*/
+
+
+// ---------------- JS  HIDE and SHOW HTML ---------------- Date: 02.12.2024
+
+const myButton = document.getElementById("myButton");
+const myImg = document.getElementById("myImg");
+
+myButton.addEventListener("click", event => {
+    if(myImg.style.visibility === "hidden"){
+        myImg.style.visibility = "visible";
+        myButton.textContent = "Hide";
+    }
+    else{
+        myImg.style.visibility = "hidden";
+        myButton.textContent = "Show";
+    }
+
+})

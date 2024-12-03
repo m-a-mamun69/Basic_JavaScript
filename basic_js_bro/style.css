@@ -1,21 +1,34 @@
 
 
+/* -------- For JS  HIDE and SHOW HTML --------- */
+#myButton{
+    font-size: 2rem;
+}
+
+/* -------- For JS KEY EVENTS CSS -------- */
+/*
+body{
+    margin: 0;
+}
 #myBox{
     background-color: lightgreen;
     width: 300px;
     height: 300px;
-    font-size: 4.5rem;
-    font-weight: bold;
+    font-size: 10rem;
     display: flex;
     align-items: center;
-    text-align: center;
+    justify-content: center;
+    position: relative;
 }
+*/
+/* 
 #myButton{
     border: 1px solid;
     font-size: 2.5rem;
     padding: 5px;
     margin: 5px;
-}
+} 
+*/
 
 
  /* -------- For JS Add/Change CSS -------- */
