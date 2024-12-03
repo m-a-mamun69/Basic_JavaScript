@@ -470,8 +470,11 @@ document.addEventListener("keyup", event => {
     console.log(`key up = ${event.key}`);
 });
 */
-/*
-const myBox = document.getElementById("myBox")
+
+const myBox = document.getElementById("myBox");
+const moveAmount = 10;
+let x = 0;
+let y = 0;
 
 document.addEventListener("keydown", event => {
     myBox.textContent = "😍";
@@ -482,11 +485,35 @@ document.addEventListener("keyup", event => {
     myBox.textContent = "😎";
     myBox.style.backgroundColor = "gray";
 });
-*/
+
+document.addEventListener("keydown", event => {
+
+    if(event.key.startsWith("Arrow")){
+        event.preventDefault();
+        switch(event.key){
+            case "ArrowUp":
+                y -= moveAmount;
+                break;
+            case "ArrowDown":
+                y += moveAmount;
+                break;
+            case "ArrowLeft":
+                x -= moveAmount;
+                break;
+            case "ArrowRight":
+                x += moveAmount;
+                break;
+        }
+
+        myBox.style.top = `${y}px`;
+        myBox.style.left = `${x}px`;
+    }
+
+})
 
 
-// ---------------- JS  HIDE and SHOW HTML ---------------- Date: 02.12.2024
-
+// ---------------- JS  HIDE and SHOW HTML ---------------- Date: 03.12.2024
+/*
 const myButton = document.getElementById("myButton");
 const myImg = document.getElementById("myImg");
 
@@ -500,4 +527,5 @@ myButton.addEventListener("click", event => {
         myButton.textContent = "Show";
     }
 
-})
+});
+*/

@@ -1,12 +1,14 @@
 
 
 /* -------- For JS  HIDE and SHOW HTML --------- */
+/*
 #myButton{
     font-size: 2rem;
 }
+*/
 
 /* -------- For JS KEY EVENTS CSS -------- */
-/*
+
 body{
     margin: 0;
 }
@@ -20,7 +22,7 @@ body{
     justify-content: center;
     position: relative;
 }
-*/
+
 /* 
 #myButton{
     border: 1px solid;
