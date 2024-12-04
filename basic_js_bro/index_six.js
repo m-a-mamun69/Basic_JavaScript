@@ -470,7 +470,7 @@ document.addEventListener("keyup", event => {
     console.log(`key up = ${event.key}`);
 });
 */
-
+/* 
 const myBox = document.getElementById("myBox");
 const moveAmount = 10;
 let x = 0;
@@ -510,7 +510,7 @@ document.addEventListener("keydown", event => {
     }
 
 })
-
+*/
 
 // ---------------- JS  HIDE and SHOW HTML ---------------- Date: 03.12.2024
 /*

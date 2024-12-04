@@ -1,5 +1,21 @@
 
 
+
+
+ /* ---------- For JS NodeList HTML ----------- */
+
+.myButton{
+    border: none;
+    border-radius: 5px;
+    font-size: 3rem;
+    padding: 10px 15px;
+    margin: 10px;
+    background-color: hsl(204, 90%, 50%);
+    color: white;
+} 
+
+
+
 /* -------- For JS  HIDE and SHOW HTML --------- */
 /*
 #myButton{
@@ -8,7 +24,7 @@
 */
 
 /* -------- For JS KEY EVENTS CSS -------- */
-
+/*
 body{
     margin: 0;
 }
@@ -22,6 +38,7 @@ body{
     justify-content: center;
     position: relative;
 }
+*/
 
 /* 
 #myButton{
