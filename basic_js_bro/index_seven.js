@@ -145,7 +145,7 @@ Callback Hell = Situation in JavaScript where callbacks
                            Old pattern to handle asynchronous functions.
                            Use Promises + async/await to avoid Callback Hell
 */
-
+/*
 function task1(callback){
     setTimeout(() => {
         console.log("Task 1 Complete.");
@@ -181,3 +181,52 @@ task1(() => {
         })
     })
 });
+*/
+
+
+// ---------------- JS IMAGE SLIDER ---------------- Date: 06.12.2024
+// Explanation
+/*
+This is an image slider program that you can create as a beginner. 
+We will be using element selectors to create a nodelist of images to cycle through. 
+An image to be displayed will have a class added to their classList that contains display: block. 
+You will need at least a few images of your choosing to work with. I recommend image that are roughly the same size.
+*/
+
+const slides = document.querySelectorAll(".slides img");
+let slideIndex = 0;
+let intervalId = null;
+
+// initializeSlider();
+document.addEventListener("DOMContentLoaded", initializeSlider);
+
+function initializeSlider(){
+    if(slides.length > 0){
+        slides[slideIndex].classList.add("displaySlide");
+        intervalId = setInterval(nextSlide, 5000);
+    }
+    // slides[slideIndex].classList.add("displaySlide");
+}
+function showSlide(index){
+
+    if(index >= slides.length){
+        slideIndex = 0;
+    }
+    else if(index < 0){
+        slideIndex = slides.length - 1;
+    }
+    
+    slides.forEach(slide => {
+        slide.classList.remove("displaySlide");
+    });
+    slides[slideIndex].classList.add("displaySlide");
+}
+function prevSlide(){
+    clearInterval(intervalId);
+    slideIndex--;
+    showSlide(slideIndex);
+}
+function nextSlide(){
+    slideIndex++;
+    showSlide(slideIndex);
+}
