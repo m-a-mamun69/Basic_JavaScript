@@ -192,7 +192,7 @@ We will be using element selectors to create a nodelist of images to cycle throu
 An image to be displayed will have a class added to their classList that contains display: block. 
 You will need at least a few images of your choosing to work with. I recommend image that are roughly the same size.
 */
-
+/*
 const slides = document.querySelectorAll(".slides img");
 let slideIndex = 0;
 let intervalId = null;
@@ -230,3 +230,81 @@ function nextSlide(){
     slideIndex++;
     showSlide(slideIndex);
 }
+*/
+
+
+// ---------------- JS PROMISES ---------------- Date: 07.12.2024
+// Explanation
+/*
+Promise = An Object that manages asynchronous operations.
+                   Wrap a Promise Object around {asynchronous code}
+                   "I promise to return a value"
+
+DO THESE CHORES IN ORDER
+
+1. WALK THE DOG
+2. CLEAN THE KITCHEN
+3. TAKE OUT THE TRASH
+*/
+
+function walkDog(){
+
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+
+            const dogwalked = true;
+
+            if(dogwalked){
+                resolve("You walk The Dog 🐕");
+            }
+            else{
+                reject("You DIDN'T walk The Dog.");
+            }
+        }, 1500);
+    });
+}
+
+function cleanKitchen(){
+
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+
+            const kitchenCleaned = true;
+
+            if(kitchenCleaned){
+                resolve("You Clean the Kitchen 🧹");
+            }
+            else{
+                reject("You DIDN'T Clean the Kitchen.");
+            }
+        }, 2500);
+    })
+}
+
+function takeOutTrash(){
+
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+
+            const trashThakenOut = false;
+
+            if(trashThakenOut){
+                resolve("You take out Trash 🗑️");
+            }
+            else{
+                reject("You DIDN'T take out trash.");
+            }
+        }, 500);
+    })
+}
+
+walkDog().then(value => {console.log(value); return cleanKitchen()})
+        .then(value => {console.log(value); return takeOutTrash()})
+        .then(value => {console.log(value); console.log("You Finished all the tasks.")})
+        .catch(error => console.error(error));
+
+// walkDog(() => {
+//     cleanKitchen(() => {
+//         takeOutTrash(() => console.log("You Finished all the tasks."));
+//     });
+// });
