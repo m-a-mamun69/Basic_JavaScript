@@ -246,7 +246,7 @@ DO THESE CHORES IN ORDER
 2. CLEAN THE KITCHEN
 3. TAKE OUT THE TRASH
 */
-
+/*
 function walkDog(){
 
     return new Promise((resolve, reject) => {
@@ -308,3 +308,90 @@ walkDog().then(value => {console.log(value); return cleanKitchen()})
 //         takeOutTrash(() => console.log("You Finished all the tasks."));
 //     });
 // });
+*/ 
+
+
+// ---------------- JS ASYNC/AWAIT ---------------- Date: 08.12.2024
+// Explanation
+/*
+Async/Await = Async = makes a function return a promise
+                           Await = makes an async function wait for a promise
+
+Allows you write asynchronous code in a synchronous manner
+Async doesn't have resolve or reject parameters
+Everything after Await is placed in an event queue.
+*/
+
+function walkDog(){
+
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+
+            const dogwalked = true;
+
+            if(dogwalked){
+                resolve("You walk The Dog 🐕");
+            }
+            else{
+                reject("You DIDN'T walk The Dog.");
+            }
+        }, 1500);
+    });
+}
+
+function cleanKitchen(){
+
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+
+            const kitchenCleaned = true;
+
+            if(kitchenCleaned){
+                resolve("You Clean the Kitchen 🧹");
+            }
+            else{
+                reject("You DIDN'T Clean the Kitchen.");
+            }
+        }, 2500);
+    });
+}
+
+function takeOutTrash(){
+
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+
+            const trashThakenOut = false;
+
+            if(trashThakenOut){
+                resolve("You take out Trash 🗑️");
+            }
+            else{
+                reject("You DIDN'T take out trash.");
+            }
+        }, 500);
+    });
+}
+
+async function doChores(){
+
+    try{
+        const walkDogResult = await walkDog();
+        console.log(walkDogResult);
+    
+        const cleanKitchenResult = await cleanKitchen();
+        console.log(cleanKitchenResult);
+    
+        const takeOutTrashResult = await takeOutTrash();
+        console.log(takeOutTrashResult);
+    
+        console.log("YOu finished all the chores.");
+    }
+    catch(error){
+        console.error(error);
+    }
+    
+
+}
+
+doChores();
